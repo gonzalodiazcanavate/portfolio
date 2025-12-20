@@ -3,7 +3,8 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 
 ## [Próxima Versión] -  ##
 ###  Agregado (Added)
-
+- Index de la página añadido.
+- Prototipo de Navbar añadido.
 ### Cambiado (Changed)
 
 ### Corregido (Fixed)
