@@ -6,6 +6,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 - Index de la página añadido.
 - Prototipo de Navbar añadido.
 - Prototipo de Hero Añadido.
+- Componente Button añadido.
 ### Cambiado (Changed)
 
 ### Corregido (Fixed)
