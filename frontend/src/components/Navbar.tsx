@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import {X, Menu} from 'lucide-react';
 import type {NavLink} from '@/types/common';
+import { Button } from './ul/Button';
 import MobileNav from './MobileNav';
 
 
@@ -50,9 +51,9 @@ const Navbar = () => {
                 <span className="text-primary">{link.name}</span>
               </a>
             ))}
-            <button className="font-mono border-primary text-primary hover:bg-primary/10">
+            <Button variant="outline" size="sm" className="font-mono border-primary text-primary hover:bg-primary/10">
                 Resume
-            </button>
+            </Button>
           </div>
 
           {/* Botón menu desplegable */}

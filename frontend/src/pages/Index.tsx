@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 
 const Index = () => {
@@ -5,8 +6,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        { /*
+        
         <Hero />
+        { /*
         <About />
         <Skills />
         <Projects />

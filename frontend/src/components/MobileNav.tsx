@@ -1,4 +1,5 @@
 import type {NavLink} from '@/types/common';
+import {Button} from './ul/Button';
 
 
 const MobileNav = ({navLinks, setIsMobileMenuOpen}: { 
@@ -18,9 +19,9 @@ const MobileNav = ({navLinks, setIsMobileMenuOpen}: {
             <span className="text-primary">{link.name}</span>
           </a>
         ))}
-        <button className="font-mono border-primary text-primary hover:bg-primary/10 mt-4">
+        <Button variant="outline" className="font-mono border-primary text-primary hover:bg-primary/10 mt-4">
               Resume
-        </button>
+        </Button>
       </div>
     </div>
   );
