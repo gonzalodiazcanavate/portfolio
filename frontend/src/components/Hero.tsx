@@ -7,7 +7,7 @@ const Hero = () => {
       {/* background de celdas */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
-      {/* Gradient */}
+      {/* Efecto Gradiente */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{background: 'var(--gradient-hero)'}}
@@ -19,12 +19,12 @@ const Hero = () => {
       {/* Contenido */}
       <div className="container relative z-10 px-6">
         <div className="max-w-4xl mx-auto">
-          {/* Greeting */}
+          {/* Saludo */}
           <p className="font-mono text-primary mb-4 text-lg animate-fade-up" style={{animationDelay: '0.1s'}}>
             Hi, my name is
           </p>
 
-          {/* Name */}
+          {/* Nombre */}
           <h1 
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 animate-fade-up"
             style={{animationDelay: '0.2s'}}
@@ -32,7 +32,7 @@ const Hero = () => {
             Gonzalo Díaz<span className="text-primary">.</span>
           </h1>
 
-          {/* Tagline */}
+          {/* Profesión */}
           <h2 
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-8 animate-fade-up"
             style={{animationDelay: '0.3s'}}
@@ -40,7 +40,7 @@ const Hero = () => {
             Full-Stack Web Developer.
           </h2>
 
-          {/* Description */}
+          {/* Descripcion */}
           <p 
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-up"
             style={{animationDelay: '0.4s'}}
@@ -49,7 +49,7 @@ const Hero = () => {
             technologies and following standards and best practices.
           </p>
 
-          {/* CTA Buttons */}
+          {/* Botones Proyectos/Curriculum */}
           <div 
             className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-up"
             style={{animationDelay: '0.5s'}}
@@ -62,7 +62,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links */}
+          {/* Links */}
           <div 
             className="flex gap-6 animate-fade-up"
             style={{animationDelay: '0.6s'}}
@@ -93,7 +93,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Icono Flecha */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <ArrowDown className="w-6 h-6 text-muted-foreground" />
         </div>
