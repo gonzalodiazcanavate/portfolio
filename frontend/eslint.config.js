@@ -32,7 +32,7 @@ export default defineConfig([
       'comma-dangle': ['error', 'always-multiline'],
       'object-curly-newline': ['error', { multiline: true }],
       'array-bracket-newline': ['error', { multiline: true }],
-      'max-len': ['warn', { code: 100 }],
+      'max-len': ['warn', { code: 120 }],
 
       // Sin espacios en (), {} y [].
 
