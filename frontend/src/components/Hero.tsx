@@ -1,22 +1,24 @@
 import {ArrowDown, Github, Linkedin, Mail} from 'lucide-react';
+import {Button} from './ul/Button';
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Grid pattern background */}
+      {/* background de celdas */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
-      {/* Gradient overlay */}
+      {/* Gradient */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{background: 'var(--gradient-hero)'}}
       />
 
-      {/* Floating orb */}
+      {/* Efecto orbe azul pulsante */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse" />
 
+      {/* Contenido */}
       <div className="container relative z-10 px-6">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto">
           {/* Greeting */}
           <p className="font-mono text-primary mb-4 text-lg animate-fade-up" style={{animationDelay: '0.1s'}}>
             Hi, my name is
@@ -27,7 +29,7 @@ const Hero = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 animate-fade-up"
             style={{animationDelay: '0.2s'}}
           >
-            Alex Chen<span className="text-primary">.</span>
+            Gonzalo Díaz<span className="text-primary">.</span>
           </h1>
 
           {/* Tagline */}
@@ -35,7 +37,7 @@ const Hero = () => {
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-8 animate-fade-up"
             style={{animationDelay: '0.3s'}}
           >
-            I build things for the web.
+            Full-Stack Web Developer.
           </h2>
 
           {/* Description */}
@@ -43,21 +45,21 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-up"
             style={{animationDelay: '0.4s'}}
           >
-            I'm a full-stack developer specializing in building exceptional digital experiences. 
-            Currently focused on creating accessible, human-centered products with modern technologies.
+            I'm a full-stack developer specialiced in building web services with the most modern 
+            technologies and following standards and best practices.
           </p>
 
           {/* CTA Buttons */}
           <div 
-            className="flex flex-wrap gap-4 mb-16 animate-fade-up"
+            className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-up"
             style={{animationDelay: '0.5s'}}
           >
-            <button size="lg" className="font-mono glow hover:glow-strong transition-shadow">
+            <Button size="lg" className="font-mono glow hover:glow-strong transition-[box-shadow] duration-300">
               View My Work
-            </button>
-            <button size="lg" variant="outline" className="font-mono border-primary/50 hover:bg-primary/10">
+            </Button>
+            <Button size="lg" variant="outline" className="font-mono border-primary/50 hover:bg-primary/10">
               Download CV
-            </button>
+            </Button>
           </div>
 
           {/* Social Links */}
@@ -66,14 +68,16 @@ const Hero = () => {
             style={{animationDelay: '0.6s'}}
           >
             <a 
-              href="#" 
+              href="https://github.com/gonzalodiazcanavate" 
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="GitHub"
             >
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/gonzalo-díaz-cañavate-5884912aa
+
+" 
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="LinkedIn"
             >
