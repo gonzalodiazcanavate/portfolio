@@ -3,7 +3,7 @@ import {Button} from './ul/Button';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center xl:justify-start overflow-hidden">
       {/* background de celdas */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
@@ -14,10 +14,10 @@ const Hero = () => {
       />
 
       {/* Efecto orbe azul pulsante */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse" />
+      <div className="absolute top-1/4 right-1/4 2xl:right-1/3 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse" />
 
       {/* Contenido */}
-      <div className="container relative z-10 px-6">
+      <div className="container relative z-10 px-6 xl:pr-10 xl:pl-0 2xl:ml-[10%]">
         <div className="max-w-4xl mx-auto">
           {/* Saludo */}
           <p className="font-mono text-primary mb-4 text-lg animate-fade-up" style={{animationDelay: '0.1s'}}>
