@@ -7,7 +7,7 @@ const MobileNav = ({navLinks, setIsMobileMenuOpen}: {
   setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
-    <div className="md:hidden fixed left-0 right-0 bottom-0 top-8 bg-background/95 backdrop-blur-md z-40">
+    <div className="md:hidden fixed inset-0 bg-background/95 backdrop-blur-md z-40">
       <div className="flex flex-col items-center justify-top h-full gap-8 mt-12">
         {navLinks.map((link) => (
           <a
