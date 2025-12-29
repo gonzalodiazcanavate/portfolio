@@ -3,7 +3,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 
 ## [Próxima Versión] -  ##
 ###  Agregado (Added)
-
+- Componente Footer.
 ### Cambiado (Changed)
 
 ### Corregido (Fixed)
