@@ -4,6 +4,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 ## [Próxima Versión] -  ##
 ###  Agregado (Added)
 - Componente Footer.
+- Componente Skills.
 ### Cambiado (Changed)
 
 ### Corregido (Fixed)
