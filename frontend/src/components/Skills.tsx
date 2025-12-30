@@ -1,34 +1,4 @@
-const skills = [
-  { name: "JavaScript", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "React", level: 92 },
-  { name: "Node.js", level: 85 },
-  { name: "Next.js", level: 88 },
-  { name: "Tailwind CSS", level: 95 },
-  { name: "PostgreSQL", level: 80 },
-  { name: "GraphQL", level: 75 },
-];
-
-const technologies = [
-  "Java",
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "PHP",
-  "Spring Boot",
-  "React",
-  "Next.js",
-  "Symphony",
-  "Node.js",
-  "Express",
-  "PostgreSQL",
-  "MongoDB",
-  "REST APIs",
-  "HTML5 & CSS3",
-  "Tailwind CSS",
-  "Git & GitHub",
-  "Docker",
-  "Vercel",
-];
+import { skills, technologies } from "@/helpers/skillsHelper";
 
 const Skills = () => {
   return (
@@ -38,7 +8,7 @@ const Skills = () => {
           {/* Section Header */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
-              <span className="text-primary">02.</span> Skills & Technologies
+              Skills & Technologies
             </h2>
             <div className="h-px bg-border flex-1 max-w-xs" />
           </div>
@@ -51,13 +21,17 @@ const Skills = () => {
                 <div key={skill.name} className="space-y-2">
                   <div className="flex justify-between text-sm">
                     <span className="font-mono">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
+                    <span className="text-muted-foreground">{skill.level}</span>
                   </div>
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <div
                       className="h-full bg-primary rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.level}%` }}
+                      style={{ width: `${skill.pct}%` }}
                     />
+                  </div>
+                  <div className="text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">{skill.description}</p>
+                    <p><span className="text-primary">+{skill.experience} years</span>  experience</p>
                   </div>
                 </div>
               ))}
