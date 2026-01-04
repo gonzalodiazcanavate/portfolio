@@ -54,12 +54,17 @@ const Hero = () => {
             className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-up"
             style={{animationDelay: '0.5s'}}
           >
-            <Button size="lg" className="font-mono glow hover:glow-strong transition-[box-shadow] duration-300">
-              View My Work
-            </Button>
-            <Button size="lg" variant="outline" className="font-mono border-primary/50 hover:bg-primary/10">
-              Download CV
-            </Button>
+            <a href="#projects">
+              <Button size="lg" className="font-mono glow hover:glow-strong transition-[box-shadow] duration-300 cursor-pointer">
+                View My Work
+              </Button>
+            </a>
+            
+            <a target="_blank" href="/Curriculum-V2.pdf">
+              <Button size="lg" variant="outline" className="font-mono border-primary/50 hover:bg-primary/10 cursor-pointer">
+                Download CV
+              </Button>
+            </a>
           </div>
 
           {/* Links */}

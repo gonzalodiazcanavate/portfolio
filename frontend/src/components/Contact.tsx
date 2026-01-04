@@ -32,7 +32,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="font-mono glow hover:glow-strong transition-shadow">
+            <Button size="lg" className="font-mono glow hover:glow-strong transition-shadow cursor-pointer">
               <Send className="w-4 h-4 mr-2" />
                 Say Hello
             </Button>
