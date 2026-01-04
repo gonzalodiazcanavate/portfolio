@@ -1,10 +1,4 @@
-interface Skill {
-    name: string;
-    level: string;
-    pct: number;
-    experience: number;
-    description: string;
-}
+import type { Skill } from "@/types/common";
 
 export const skills: Skill[] = [
     { name: "English", level: "C1", pct: 90, experience: 10, description: "Learned through formal education and certified by Cambridge Language School." },
