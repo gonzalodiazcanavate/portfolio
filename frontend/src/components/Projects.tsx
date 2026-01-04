@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
-import { ExternalLink, Github, Folder } from "lucide-react";
-import { FeaturedProjects } from "../helpers/projectsHelper";
+import {Link} from 'react-router-dom';
+import {ExternalLink, Github, Folder} from 'lucide-react';
+import {FeaturedProjects} from '../helpers/projectsHelper';
 
 const Projects = () => {
+  const handleProjectClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="projects" className="py-24 relative">
       <div className="container px-6">
@@ -26,6 +30,7 @@ const Projects = () => {
                 {/* overlay clickable */}
                 <Link
                   to={`/project/${project.id}`}
+                  onClick={handleProjectClick}
                   className="absolute inset-0 z-0"
                 />
                 <div className="flex justify-between items-start mb-6">

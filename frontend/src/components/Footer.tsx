@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import {Github, Linkedin, Mail} from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
 
           {/* Creditos */}
           <p className="font-mono text-sm text-muted-foreground">
-            Designed & Built by{" "}
+            Designed & Built by{' '}
             <a href="https://github.com/gonzalodiazcanavate" className="text-primary hover:underline">
               Gonzalo Díaz
             </a>

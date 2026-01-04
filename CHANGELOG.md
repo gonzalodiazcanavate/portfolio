@@ -4,11 +4,15 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 ## [Próxima Versión] -  ##
 ###  Agregado (Added)
 - Añadido componente Contact.
+- Añadido componente ImageModal.
 - Añadidos links de email y telegram.
+- Añadidas imagenes y logo de la página.
+- Descargas de Curriculum.
 ### Cambiado (Changed)
 - Refactorizados algunos comentarios.
+- Rework de Página de detalles de Proyecto.
 ### Corregido (Fixed)
-
+- Arreglados fallos estéticos.
 ### Obsoleto (Deprecated)
 
 ### Eliminado (Removed)
@@ -18,7 +22,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 - Componente Footer.
 - Componente Skills.
 - Componente Projects.
-- Prototipo de Página de detalles de jugador añadida.
+- Prototipo de Página de detalles de Proyecto añadida.
 
 ## [0.2.0] - 24/12/2025 ##
 ###  Agregado (Added)
