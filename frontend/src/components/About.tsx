@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="py-24 relative">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+          {/* Cabecera de sección */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
               <span className="text-primary">About Me</span> 
@@ -14,7 +14,7 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 xl:ml-[5%] gap-12 items-start">
-            {/* Text Content */}
+            {/* Descripción */}
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
                 Hello! I'm Gonzalo, a passionate web developer based in Murcia, Spain. I started creating software in 2023
@@ -51,7 +51,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Visual Cards */}
+            {/* Cards con cualidades */}
             <div className="space-y-4">
               <div className="card-gradient p-6 rounded-lg border border-border hover:border-primary/50 transition-colors group">
                 <Code2 className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />

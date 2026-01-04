@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="py-8 border-t border-border">
       <div className="container px-6">
         <div className="flex flex-col items-center gap-4">
-          {/* Social Links */}
+          {/* Links */}
           <div className="flex gap-6">
             <a
               href="https://github.com/gonzalodiazcanavate"
@@ -22,7 +22,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="mailto:gonzalodiazca@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Mail"
             >
@@ -30,10 +30,10 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Credit */}
+          {/* Creditos */}
           <p className="font-mono text-sm text-muted-foreground">
             Designed & Built by{" "}
-            <a href="#" className="text-primary hover:underline">
+            <a href="https://github.com/gonzalodiazcanavate" className="text-primary hover:underline">
               Gonzalo Díaz
             </a>
           </p>

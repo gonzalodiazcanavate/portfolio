@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -10,14 +11,11 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        
         <Hero />
         <About />
         <Skills />
         <Projects />
-        { /*
         <Contact />
-        */ }
       </main>
       <Footer />
     </div>
