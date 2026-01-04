@@ -51,7 +51,7 @@ const Navbar = () => {
                 <span className="text-primary">{link.name}</span>
               </a>
             ))}
-            <a target="_blank" href="/Curriculum-V2.pdf">
+            <a target="_blank" href="/Curriculum-V3.pdf">
               <Button variant="outline" size="sm" className="font-mono border-primary text-primary hover:bg-primary/10 cursor-pointer">
                 Resume
               </Button>

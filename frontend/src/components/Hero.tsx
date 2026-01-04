@@ -60,7 +60,7 @@ const Hero = () => {
               </Button>
             </a>
             
-            <a target="_blank" href="/Curriculum-V2.pdf">
+            <a target="_blank" href="/Curriculum-V3.pdf">
               <Button size="lg" variant="outline" className="font-mono border-primary/50 hover:bg-primary/10 cursor-pointer">
                 Download CV
               </Button>

@@ -19,9 +19,11 @@ const MobileNav = ({navLinks, setIsMobileMenuOpen}: {
             <span className="text-primary">{link.name}</span>
           </a>
         ))}
-        <Button variant="outline" className="font-mono border-primary text-primary hover:bg-primary/10 mt-4">
+        <a target="_blank" href="/Curriculum-V3.pdf">
+          <Button variant="outline" className="font-mono border-primary text-primary hover:bg-primary/10 mt-4">
               Resume
-        </Button>
+          </Button>
+        </a>
       </div>
     </div>
   );
