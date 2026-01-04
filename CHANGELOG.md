@@ -3,9 +3,10 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 
 ## [Próxima Versión] -  ##
 ###  Agregado (Added)
-
+- Añadido componente Contact.
+- Añadidos links de email y telegram.
 ### Cambiado (Changed)
-
+- Refactorizados algunos comentarios.
 ### Corregido (Fixed)
 
 ### Obsoleto (Deprecated)
