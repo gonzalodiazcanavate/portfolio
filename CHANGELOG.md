@@ -1,7 +1,7 @@
 # Historial de Cambios #
 Todos los cambios notables del proyecto se documentarán en este archivo.
 
-## [Próxima Versión] -  ##
+## [1.0.0] - 05/01/2026 ##
 ###  Agregado (Added)
 - Añadido componente Contact.
 - Añadido componente ImageModal.
