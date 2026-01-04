@@ -1,5 +1,5 @@
-import { Mail, MapPin, Send } from "lucide-react";
-import { Button } from "@/components/ul/Button";
+import {Mail, MapPin, Send} from 'lucide-react';
+import {Button} from '@/components/ul/Button';
 
 const Contact = () => {
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <Button size="lg" className="font-mono glow hover:glow-strong transition-shadow">
-                <Send className="w-4 h-4 mr-2" />
+              <Send className="w-4 h-4 mr-2" />
                 Say Hello
             </Button>
           </a>

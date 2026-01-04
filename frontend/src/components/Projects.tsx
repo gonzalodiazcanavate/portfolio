@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { ExternalLink, Github, Folder } from "lucide-react";
-import { FeaturedProjects } from "../helpers/projectsHelper";
+import {Link} from 'react-router-dom';
+import {ExternalLink, Github, Folder} from 'lucide-react';
+import {FeaturedProjects} from '../helpers/projectsHelper';
 
 const Projects = () => {
   return (

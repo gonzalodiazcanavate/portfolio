@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import {X, Menu} from 'lucide-react';
 import type {NavLink} from '@/types/common';
-import { Button } from './ul/Button';
+import {Button} from './ul/Button';
 import MobileNav from './MobileNav';
 
 
