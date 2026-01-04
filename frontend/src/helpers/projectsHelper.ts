@@ -11,6 +11,6 @@ export const FeaturedProjects: Project[] = [
     tech: ['Next.js', 'React', 'JavaScript', 'Prisma', 'PostgreSQL', 'Docker'],
     github: 'https://github.com/gonzalodiazcanavate/transferBasket',
     live: '#',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
+    image: '/projects/transferbasket/Transferbasket-Home.png',
   },
 ];
