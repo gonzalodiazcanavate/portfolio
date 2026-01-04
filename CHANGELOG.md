@@ -5,6 +5,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 ###  Agregado (Added)
 - Añadido componente Contact.
 - Añadido componente ImageModal.
+- Añadida página NotFound.
 - Añadidos links de email y telegram.
 - Añadidas imagenes y logo de la página.
 - Descargas de Curriculum.
