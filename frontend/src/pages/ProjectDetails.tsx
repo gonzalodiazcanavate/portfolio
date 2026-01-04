@@ -31,17 +31,17 @@ const ProjectDetails = () => {
                     className="text-foreground hover:text-primary transition-colors"
                     aria-label="GitHub"
                   >
-                    <Github className="w-6 h-6" />
+                    <Github className="w-5 h-5 sm:w-6 sm:h-6" />
                   </a>
                   <a
                     href={project.live}
                     className="text-foreground hover:text-primary transition-colors"
                     aria-label="Live Demo"
                   >
-                    <ExternalLink className="w-6 h-6" />
+                    <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6" />
                   </a>
                 </div>
-                <h3 className="text-4xl font-bold hover:text-primary transition-colors">
+                <h3 className="text-3xl sm:text-4xl font-bold hover:text-primary transition-colors">
                   <a href={project.live}>{project.title}</a>
                 </h3>
               </div>
@@ -61,7 +61,7 @@ const ProjectDetails = () => {
             {/* Contenido */}
             <div className="text-center space-y-6">
               <div className="card-gradient p-6 rounded-lg border border-border">
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                   {project.description}
                 </p>
               </div>
@@ -76,7 +76,7 @@ const ProjectDetails = () => {
             <div className="text-center space-y-6">
               <h4 className="text-2xl text-primary font-bold">Architecture</h4>
               <div className="card-gradient p-6 rounded-lg border border-border">
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                   {project.architecture}
                 </p>
               </div>
@@ -84,7 +84,7 @@ const ProjectDetails = () => {
 
             {/* Imagenes Adicionales */}
             <div className="text-center space-y-6">
-              <h4 className="text-2xl text-primary font-bold">Other Images</h4>
+              <h4 className="text-2xl font-bold">Other Images</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {project.images?.map((image: string, index: number) => (
                   <div
