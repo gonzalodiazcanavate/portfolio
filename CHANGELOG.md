@@ -3,8 +3,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 
 ## [Próxima Versión] -  ##
 ###  Agregado (Added)
-- Componente Footer.
-- Componente Skills.
+
 ### Cambiado (Changed)
 
 ### Corregido (Fixed)
@@ -12,6 +11,13 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 ### Obsoleto (Deprecated)
 
 ### Eliminado (Removed)
+
+## [0.3.0] - 04/01/2026 ##
+###  Agregado (Added)
+- Componente Footer.
+- Componente Skills.
+- Componente Projects.
+- Prototipo de Página de detalles de jugador añadida.
 
 ## [0.2.0] - 24/12/2025 ##
 ###  Agregado (Added)
