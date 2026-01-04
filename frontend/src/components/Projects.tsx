@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="py-24 relative">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+          {/* Cabecera de sección */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
               <span className="text-primary">Things I've Built</span> 
@@ -15,7 +15,7 @@ const Projects = () => {
             <div className="h-px bg-border flex-1 max-w-xs" />
           </div>
 
-          {/* Projects */}
+          {/* Proyectos */}
           <h3 className="font-mono text-xl text-center mb-8">Noteworthy Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {FeaturedProjects.map((project) => (

@@ -5,7 +5,7 @@ const Skills = () => {
     <section id="skills" className="py-24 bg-secondary/30 relative">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+          {/* Cabecera de sección */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
               Skills & Technologies
@@ -14,7 +14,7 @@ const Skills = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Skill Bars */}
+            {/* Barritas con el nivel en cada habilidad */}
             <div className="space-y-6">
               <h3 className="font-mono text-lg text-primary mb-6">Proficiency</h3>
               {skills.map((skill) => (
@@ -37,7 +37,7 @@ const Skills = () => {
               ))}
             </div>
 
-            {/* Technology Grid */}
+            {/* Tecnologías */}
             <div>
               <h3 className="font-mono text-lg text-primary mb-6">Technologies I Work With</h3>
               <div className="grid grid-cols-2 gap-3">

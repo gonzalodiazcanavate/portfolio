@@ -15,7 +15,7 @@ const ProjectDetails = () => {
                     key={project.title}
                     className={`relative grid md:grid-cols-12 gap-4 items-center "md:text-right"`}
                 >
-                    {/* Image */}
+                    {/* Imagen */}
                     <div
                         className={`md:col-span-7 md:col-start-6 relative group`}
                     >
@@ -29,7 +29,7 @@ const ProjectDetails = () => {
                         </div>
                     </div>
 
-                    {/* Content */}
+                    {/* Contenido */}
                     <div
                         className={`md:col-span-6 md:row-start-1 md:col-start-1 md:col-start-6relative z-20`}
                     >
