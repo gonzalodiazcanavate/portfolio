@@ -7,10 +7,12 @@ export interface Project {
     id: number;
     title: string;
     description: string;
+    architecture?: string;
     tech: string[];
     github?: string;
     live?: string;
-    image?: string;
+    coverImage?: string;
+    images?: string[];
 }
 
 export interface Skill {
