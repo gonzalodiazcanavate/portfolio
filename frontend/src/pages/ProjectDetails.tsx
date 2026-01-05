@@ -4,12 +4,13 @@ import {useState} from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ImageModal from '@/components/ImageModal';
-import {FeaturedProjects} from '../helpers/projectsHelper';
+import {FeaturedProjectsES, FeaturedProjectsEN} from '../helpers/projectsHelper';
 import {useLanguage} from '@/context/LanguageContext';
 
 const ProjectDetails = () => {
   const {id} = useParams<{ id: string }>();
-  const {t} = useLanguage();
+  const {language, t} = useLanguage();
+  const FeaturedProjects = language === 'es' ? FeaturedProjectsES : FeaturedProjectsEN;
   const projectId = parseInt(id || '0');
   const project = FeaturedProjects.find(p => p.id == projectId);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

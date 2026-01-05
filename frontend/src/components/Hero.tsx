@@ -45,7 +45,7 @@ const Hero = () => {
 
           {/* Descripcion */}
           <p 
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-up"
+            className="text-lg text-center md:text-xl mx-auto text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-up"
             style={{animationDelay: '0.4s'}}
           >
             {t.hero.description}

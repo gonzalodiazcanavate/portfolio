@@ -1,8 +1,9 @@
-import {skills, technologies} from '@/helpers/skillsHelper';
+import {skillsES, skillsEN, technologies} from '@/helpers/skillsHelper';
 import {useLanguage} from '@/context/LanguageContext';
 
 const Skills = () => {
-  const {t} = useLanguage();
+  const {language, t} = useLanguage();
+  const skills = language === 'es' ? skillsES : skillsEN;
 
   return (
     <section id="skills" className="py-24 bg-secondary/30 relative">

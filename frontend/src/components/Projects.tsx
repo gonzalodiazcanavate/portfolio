@@ -1,10 +1,11 @@
 import {Link} from 'react-router-dom';
 import {ExternalLink, Github, Folder} from 'lucide-react';
-import {FeaturedProjects} from '../helpers/projectsHelper';
+import {FeaturedProjectsES, FeaturedProjectsEN} from '../helpers/projectsHelper';
 import {useLanguage} from '@/context/LanguageContext';
 
 const Projects = () => {
-  const {t} = useLanguage();
+  const {language, t} = useLanguage();
+  const FeaturedProjects = language === 'es' ? FeaturedProjectsES : FeaturedProjectsEN;
 
   const handleProjectClick = () => {
     window.scrollTo(0, 0);

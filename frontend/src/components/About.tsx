@@ -27,9 +27,8 @@ const About = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 {t.about.para3}{' '}
-                <span className="text-primary">startup</span>, {t.about.para3_2}{' '}
-                <span className="text-primary"><a href="https://www.energetikos.com/">Energetikos</a></span>, {t.about.para3_3}{' '}
-                <span className="text-primary"><a href="http://www.rejimetal.com/">Rejimetal</a></span>. {t.about.para3_3}
+                <span className="text-primary"><a href="https://www.energetikos.com/">Energetikos</a></span>, {t.about.para3_2}{' '}
+                <span className="text-primary"><a href="http://www.rejimetal.com/">Rejimetal</a></span>, {t.about.para3_3}{' '}
               </p>
 
               {/* Stats */}
