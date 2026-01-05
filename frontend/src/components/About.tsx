@@ -1,6 +1,9 @@
 import {Code2, Coffee, Rocket} from 'lucide-react';
+import {useLanguage} from '@/context/LanguageContext';
 
 const About = () => {
+  const {t} = useLanguage();
+
   return (
     <section id="about" className="py-24 relative">
       <div className="container px-6">
@@ -8,7 +11,7 @@ const About = () => {
           {/* Cabecera de sección */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
-              <span className="text-primary">About Me</span> 
+              <span className="text-primary">{t.about.title}</span> 
             </h2>
             <div className="h-px bg-border flex-1 max-w-xs" />
           </div>
@@ -17,36 +20,30 @@ const About = () => {
             {/* Descripción */}
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
-                Hello! I'm Gonzalo, a passionate web developer based in Murcia, Spain. I started creating software in 2023
-                and I've been involved in different projects since. I'm alaways opened to new challenges and I love Learning
-                from experiencedd developers.
+                {t.about.para1}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My journey into web development started back in 2023 when I started my studies Web Apllication's development. I've 
-                been accumalitingexperience and improving my skills since then and I hope to keep doing so in the future.
+                {t.about.para2}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Fast-forward to today, and I've had the privilege of working at a{' '}
-                <span className="text-primary">startup</span>, specialiced in solar energy called{' '}
-                <span className="text-primary"><a href="https://www.energetikos.com/">Energetikos</a></span>, and a{' '}
-                <span className="text-primary">large company</span> called {' '}
-                <span className="text-primary"><a href="http://www.rejimetal.com/"></a>Rejimetal</span>. My main focus these days is 
-                building Open Source Application that can serve as a base for bigger products.
+                {t.about.para3}{' '}
+                <span className="text-primary"><a href="https://www.energetikos.com/">Energetikos</a></span>, {t.about.para3_2}{' '}
+                <span className="text-primary"><a href="http://www.rejimetal.com/">Rejimetal</a></span>, {t.about.para3_3}{' '}
               </p>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary font-mono">2+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-sm text-muted-foreground">{t.about.stats_experience}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary font-mono">5+</div>
-                  <div className="text-sm text-muted-foreground">Projects Done</div>
+                  <div className="text-sm text-muted-foreground">{t.about.stats_projects}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary font-mono">10+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
+                  <div className="text-sm text-muted-foreground">{t.about.stats_clients}</div>
                 </div>
               </div>
             </div>
@@ -55,23 +52,23 @@ const About = () => {
             <div className="space-y-4">
               <div className="card-gradient p-6 rounded-lg border border-border hover:border-primary/50 transition-colors group">
                 <Code2 className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="font-mono font-semibold mb-2">Clean Code</h3>
+                <h3 className="font-mono font-semibold mb-2">{t.about.clean_code}</h3>
                 <p className="text-sm text-muted-foreground">
-                  I write code that is maintainable, scalable, and follows best practices.
+                  {t.about.clean_code_desc}
                 </p>
               </div>
               <div className="card-gradient p-6 rounded-lg border border-border hover:border-primary/50 transition-colors group">
                 <Rocket className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="font-mono font-semibold mb-2">Fast & Optimized</h3>
+                <h3 className="font-mono font-semibold mb-2">{t.about.fast_optimized}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Performance is key. I build blazing fast websites with optimal loading times.
+                  {t.about.fast_optimized_desc}
                 </p>
               </div>
               <div className="card-gradient p-6 rounded-lg border border-border hover:border-primary/50 transition-colors group">
                 <Coffee className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="font-mono font-semibold mb-2">Always Learning</h3>
+                <h3 className="font-mono font-semibold mb-2">{t.about.always_learning}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Technology evolves. I stay current with the latest trends and tools.
+                  {t.about.always_learning_desc}
                 </p>
               </div>
             </div>

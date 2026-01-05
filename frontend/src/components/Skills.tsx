@@ -1,6 +1,10 @@
-import {skills, technologies} from '@/helpers/skillsHelper';
+import {skillsES, skillsEN, technologies} from '@/helpers/skillsHelper';
+import {useLanguage} from '@/context/LanguageContext';
 
 const Skills = () => {
+  const {language, t} = useLanguage();
+  const skills = language === 'es' ? skillsES : skillsEN;
+
   return (
     <section id="skills" className="py-24 bg-secondary/30 relative">
       <div className="container px-6">
@@ -8,7 +12,7 @@ const Skills = () => {
           {/* Cabecera de sección */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
-              Skills & Technologies
+              {t.skills.title}
             </h2>
             <div className="h-px bg-border flex-1 max-w-xs" />
           </div>
@@ -16,7 +20,7 @@ const Skills = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Barritas con el nivel en cada habilidad */}
             <div className="space-y-6">
-              <h3 className="font-mono text-lg text-primary mb-6">Proficiency</h3>
+              <h3 className="font-mono text-lg text-primary mb-6">{t.skills.proficiency}</h3>
               {skills.map((skill) => (
                 <div key={skill.name} className="space-y-2">
                   <div className="flex justify-between text-sm">
@@ -31,7 +35,7 @@ const Skills = () => {
                   </div>
                   <div className="text-muted-foreground">
                     <p className="text-sm text-muted-foreground">{skill.description}</p>
-                    <p><span className="text-primary">+{skill.experience} years</span>  experience</p>
+                    <p><span className="text-primary">+{skill.experience} {t.skills.yearsExperience}</span></p>
                   </div>
                 </div>
               ))}
@@ -39,7 +43,7 @@ const Skills = () => {
 
             {/* Tecnologías */}
             <div>
-              <h3 className="font-mono text-lg text-primary mb-6">Technologies I Work With</h3>
+              <h3 className="font-mono text-lg text-primary mb-6">{t.skills.technologies}</h3>
               <div className="grid grid-cols-2 gap-3">
                 {technologies.map((tech) => (
                   <div

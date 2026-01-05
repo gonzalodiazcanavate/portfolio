@@ -1,8 +1,12 @@
 import {Link} from 'react-router-dom';
 import {ExternalLink, Github, Folder} from 'lucide-react';
-import {FeaturedProjects} from '../helpers/projectsHelper';
+import {FeaturedProjectsES, FeaturedProjectsEN} from '../helpers/projectsHelper';
+import {useLanguage} from '@/context/LanguageContext';
 
 const Projects = () => {
+  const {language, t} = useLanguage();
+  const FeaturedProjects = language === 'es' ? FeaturedProjectsES : FeaturedProjectsEN;
+
   const handleProjectClick = () => {
     window.scrollTo(0, 0);
   };
@@ -14,13 +18,13 @@ const Projects = () => {
           {/* Cabecera de sección */}
           <div className="flex items-center gap-4 mb-12">
             <h2 className="font-mono text-2xl md:text-3xl font-bold">
-              <span className="text-primary">Things I've Built</span> 
+              <span className="text-primary">{t.projects.title}</span> 
             </h2>
             <div className="h-px bg-border flex-1 max-w-xs" />
           </div>
 
           {/* Proyectos */}
-          <h3 className="font-mono text-xl text-center mb-8">Noteworthy Projects</h3>
+          <h3 className="font-mono text-xl text-center mb-8">{t.projects.noteworthy}</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {FeaturedProjects.map((project) => (
               <div

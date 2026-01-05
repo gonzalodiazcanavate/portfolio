@@ -1,7 +1,10 @@
 import {ArrowDown, Github, Linkedin, Mail} from 'lucide-react';
 import {Button} from './ul/Button';
+import {useLanguage} from '@/context/LanguageContext';
 
 const Hero = () => {
+  const {t} = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center xl:justify-start overflow-hidden">
       {/* background de celdas */}
@@ -21,7 +24,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Saludo */}
           <p className="font-mono text-primary mb-4 text-lg animate-fade-up" style={{animationDelay: '0.1s'}}>
-            Hi, my name is
+            {t.hero.greeting}
           </p>
 
           {/* Nombre */}
@@ -29,7 +32,7 @@ const Hero = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 animate-fade-up"
             style={{animationDelay: '0.2s'}}
           >
-            Gonzalo Díaz<span className="text-primary">.</span>
+            {t.hero.name}<span className="text-primary">.</span>
           </h1>
 
           {/* Profesión */}
@@ -37,16 +40,15 @@ const Hero = () => {
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-8 animate-fade-up"
             style={{animationDelay: '0.3s'}}
           >
-            Full-Stack Web Developer.
+            {t.hero.title}
           </h2>
 
           {/* Descripcion */}
           <p 
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-up"
+            className="text-lg text-center md:text-xl mx-auto text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-up"
             style={{animationDelay: '0.4s'}}
           >
-            I'm a full-stack developer specialiced in building web services with the most modern 
-            technologies and following standards and best practices.
+            {t.hero.description}
           </p>
 
           {/* Botones Proyectos/Curriculum */}
@@ -55,14 +57,14 @@ const Hero = () => {
             style={{animationDelay: '0.5s'}}
           >
             <a href="#projects">
-              <Button size="lg" className="font-mono glow hover:glow-strong transition-[box-shadow] duration-300 cursor-pointer">
-                View My Work
+              <Button size="lg" className="font-mono glow hover:glow-strong transition-shadow duration-300 cursor-pointer">
+                {t.hero.viewWork}
               </Button>
             </a>
             
             <a target="_blank" href="/Curriculum-V3.pdf">
               <Button size="lg" variant="outline" className="font-mono border-primary/50 hover:bg-primary/10 cursor-pointer">
-                Download CV
+                {t.hero.downloadCV}
               </Button>
             </a>
           </div>

@@ -1,6 +1,18 @@
 # Historial de Cambios #
 Todos los cambios notables del proyecto se documentarán en este archivo.
 
+## [Próxima Versión] - ##
+###  Agregado (Added)
+- Selector de Idiomas.
+- Traducción al español.
+### Cambiado (Changed)
+
+### Corregido (Fixed)
+
+### Obsoleto (Deprecated)
+
+### Eliminado (Removed)
+
 ## [1.0.0] - 05/01/2026 ##
 ###  Agregado (Added)
 - Añadido componente Contact.
@@ -14,9 +26,6 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 - Rework de Página de detalles de Proyecto.
 ### Corregido (Fixed)
 - Arreglados fallos estéticos.
-### Obsoleto (Deprecated)
-
-### Eliminado (Removed)
 
 ## [0.3.0] - 04/01/2026 ##
 ###  Agregado (Added)

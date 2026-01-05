@@ -3,18 +3,20 @@ import {X, Menu} from 'lucide-react';
 import type {NavLink} from '@/types/common';
 import {Button} from './ul/Button';
 import MobileNav from './MobileNav';
+import {useLanguage} from '@/context/LanguageContext';
 
-
-const navLinks: NavLink[] = [
-  {name: 'About', href: '/#about'},
-  {name: 'Skills', href: '/#skills'},
-  {name: 'Projects', href: '/#projects'},
-  {name: 'Contact', href: '/#contact'},
-];
 
 const Navbar = () => {
+  const {language, setLanguage, t} = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks: NavLink[] = [
+    {name: t.nav.about, href: '/#about'},
+    {name: t.nav.skills, href: '/#skills'},
+    {name: t.nav.projects, href: '/#projects'},
+    {name: t.nav.contact, href: '/#contact'},
+  ];
 
   // Efecto en el borde inferior del header al hacer scroll
   useEffect(() => {
@@ -51,9 +53,20 @@ const Navbar = () => {
                 <span className="text-primary">{link.name}</span>
               </a>
             ))}
+            
+            {/* Selector de idioma */}
+            <select
+              value={language}
+              onChange={(e) => setLanguage(e.target.value as 'es' | 'en')}
+              className="font-mono text-sm bg-background text-foreground border border-border rounded px-3 py-1 hover:border-primary transition-colors cursor-pointer"
+            >
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+
             <a target="_blank" href="/Curriculum-V3.pdf">
               <Button variant="outline" size="sm" className="font-mono border-primary text-primary hover:bg-primary/10 cursor-pointer">
-                Resume
+                {t.nav.resume}
               </Button>
             </a>
           </div>
