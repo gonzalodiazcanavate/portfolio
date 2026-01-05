@@ -5,15 +5,25 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ImageModal from '@/components/ImageModal';
 import {FeaturedProjects} from '../helpers/projectsHelper';
+import {useLanguage} from '@/context/LanguageContext';
 
 const ProjectDetails = () => {
   const {id} = useParams<{ id: string }>();
+  const {t} = useLanguage();
   const projectId = parseInt(id || '0');
   const project = FeaturedProjects.find(p => p.id == projectId);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   if (!project) {
-    return <div>Project not found</div>;
+    return (
+      <div className="min-h-screen bg-background flex flex-col items-center justify-center">
+        <Navbar />
+        <div className="flex-1 flex items-center justify-center">
+          <p className="text-2xl font-bold">{t.projectDetails.notFound}</p>
+        </div>
+        <Footer />
+      </div>
+    );
   }
   
   return (
@@ -23,7 +33,7 @@ const ProjectDetails = () => {
         <div className="max-w-4xl mx-auto px-4 py-24">
           <div key={project.title} className="space-y-8">
             <div className="text-center space-y-6">
-              <p className="font-mono text-primary text-sm">Featured Project</p>
+              <p className="font-mono text-primary text-sm">{t.projectDetails.featured}</p>
               <div className="flex items-center justify-center gap-4">
                 <div className="flex gap-3">
                   <a
@@ -74,7 +84,7 @@ const ProjectDetails = () => {
 
             {/* Arquitectura */}
             <div className="text-center space-y-6">
-              <h4 className="text-2xl text-primary font-bold">Architecture</h4>
+              <h4 className="text-2xl text-primary font-bold">{t.projectDetails.architecture}</h4>
               <div className="card-gradient p-6 rounded-lg border border-border">
                 <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                   {project.architecture}
@@ -84,7 +94,7 @@ const ProjectDetails = () => {
 
             {/* Imagenes Adicionales */}
             <div className="text-center space-y-6">
-              <h4 className="text-2xl font-bold">Other Images</h4>
+              <h4 className="text-2xl font-bold">{t.projectDetails.otherImages}</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {project.images?.map((image: string, index: number) => (
                   <div

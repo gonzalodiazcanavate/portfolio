@@ -1,6 +1,9 @@
 import {Github, Linkedin, Mail} from 'lucide-react';
+import {useLanguage} from '@/context/LanguageContext';
 
 const Footer = () => {
+  const {t} = useLanguage();
+
   return (
     <footer className="py-8 border-t border-border">
       <div className="container px-6">
@@ -32,13 +35,13 @@ const Footer = () => {
 
           {/* Creditos */}
           <p className="font-mono text-sm text-muted-foreground">
-            Designed & Built by{' '}
+            {t.footer.designedBy}{' '}
             <a href="https://github.com/gonzalodiazcanavate" className="text-primary hover:underline">
               Gonzalo Díaz
             </a>
           </p>
           <p className="font-mono text-xs text-muted-foreground/60">
-            © {new Date().getFullYear()} All rights reserved.
+            © {new Date().getFullYear()} {t.footer.allRights}
           </p>
         </div>
       </div>
