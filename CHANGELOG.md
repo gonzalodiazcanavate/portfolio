@@ -3,8 +3,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 
 ## [Próxima Versión] - ##
 ###  Agregado (Added)
-- Selector de Idiomas.
-- Traducción al español.
+
 ### Cambiado (Changed)
 
 ### Corregido (Fixed)
@@ -12,6 +11,17 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 ### Obsoleto (Deprecated)
 
 ### Eliminado (Removed)
+
+## [1.0.2] - 26/01/2026 ##
+###  Agregado (Added)
+- Proyecto Convertiu a proyectos
+### Cambiado (Changed)
+- Versión de Curriculum de V3 a V5.
+
+## [1.0.1] - 06/01/2026 ##
+###  Agregado (Added)
+- Selector de Idiomas.
+- Traducción al español.
 
 ## [1.0.0] - 05/01/2026 ##
 ###  Agregado (Added)
