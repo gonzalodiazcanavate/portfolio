@@ -33,7 +33,7 @@ const MobileNav = ({navLinks, setIsMobileMenuOpen}: {
           <option value="en">EN</option>
         </select>
 
-        <a target="_blank" href="/Curriculum-V5.pdf">
+        <a target="_blank" href="/Curriculum-V6.pdf">
           <Button variant="outline" className="font-mono border-primary text-primary hover:bg-primary/10 mt-4">
             {t.nav.resume}
           </Button>
