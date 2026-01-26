@@ -64,7 +64,7 @@ const Navbar = () => {
               <option value="en">EN</option>
             </select>
 
-            <a target="_blank" href="/Curriculum-V5.pdf">
+            <a target="_blank" href="/Curriculum-V6.pdf">
               <Button variant="outline" size="sm" className="font-mono border-primary text-primary hover:bg-primary/10 cursor-pointer">
                 {t.nav.resume}
               </Button>

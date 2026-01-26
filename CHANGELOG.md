@@ -16,7 +16,7 @@ Todos los cambios notables del proyecto se documentarán en este archivo.
 ###  Agregado (Added)
 - Proyecto Convertiu a proyectos
 ### Cambiado (Changed)
-- Versión de Curriculum de V3 a V5.
+- Versión de Curriculum de V3 a V6.
 
 ## [1.0.1] - 06/01/2026 ##
 ###  Agregado (Added)
