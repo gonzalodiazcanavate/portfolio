@@ -98,5 +98,70 @@ organization, and separation of concerns between frontend and backend layers.`,
   ],
 };
 
-export const FeaturedProjectsES: Project[] = [transferbasketES];
-export const FeaturedProjectsEN: Project[] = [transferbasketEN];
+const convertiyES: Project = {
+  id: 1,
+  title: 'Convertiu',
+  description: `Un conversor de unidades moderno construido con Astro que genera dinámicamente páginas estáticas
+     para cada conversor. Cada conversor tiene su propia URL sin necesidad de crear archivos manuales,
+     ofreciendo una interfaz limpia, responsiva e intuitiva.`,
+  architecture: `La aplicación utiliza Astro para generar un sitio estático de alto rendimiento. La generación
+dinámica de rutas se logra mediante archivos [slug].astro que leen configuraciones de conversores y generan
+automáticamente todas las páginas en tiempo de compilación. Esto garantiza que cada conversor tenga su propia
+URL sin requerir creación manual de archivos.
+
+Esta arquitectura permite maximizar el SEO significativamente, ya que cada conversor obtiene su propia URL,
+mejorando la indexación y clasificación en motores de búsqueda. La arquitectura completamente estática
+proporciona excelente rendimiento, seguridad inherente y facilidad de despliegue sin necesidad de servidor
+backend complejo, permitiendo alojar en servicios estáticos como Netlify, Vercel o GitHub Pages.
+
+El diseño es mobile-first y completamente responsivo, asegurando una excelente experiencia de usuario
+en todos los dispositivos. La interfaz es intuitiva y fácil de usar, con cálculos precisos y conversiones
+instantáneas entre diferentes sistemas de unidades.
+
+El código mantiene una separación clara entre datos (definiciones de conversores) y lógica de presentación,
+facilitando la adición de nuevos conversores simplemente agregando nuevos objetos de configuración.`,
+  tech: ['Astro', 'TypeScript', 'Tailwind CSS', 'Static Generation', 'React'],
+  github: 'https://github.com/Daniumy/Convertiu',
+  live: 'https://convertiu.vercel.app',
+  coverImage: '/projects/convertiu/Convertiu-Home.png',
+  images: [
+    '/projects/convertiu/Convertiu-Home.png',
+    '/projects/convertiu/Convertiu-Conversor.png',
+    '/projects/convertiu/Convertiu-Conversor-2.png',
+  ],
+};
+
+const convertiyEN: Project = {
+  id: 1,
+  title: 'Convertiu',
+  description: `A modern unit converter built with Astro that dynamically generates static pages for each converter.
+     Each converter has its own URL without requiring manual file creation, offering a clean, responsive
+     and intuitive interface.`,
+  architecture: `The application uses Astro to generate a high-performance static site. Dynamic route generation
+is achieved through [slug].astro files that read converter configurations and automatically generate all
+pages at build time. This ensures each converter has its own URL without requiring manual file creation.
+
+This architecture maximizes SEO significantly, as each converter gets its own URL, improving search engine
+indexing and ranking. The completely static architecture provides excellent performance, inherent security,
+and ease of deployment without requiring a complex backend server, allowing hosting on static services
+such as Netlify, Vercel, or GitHub Pages.
+
+The design is mobile-first and fully responsive, ensuring an excellent user experience across all
+devices. The interface is intuitive and easy to use, with precise calculations and instant conversions
+between different unit systems.
+
+The code maintains a clear separation between data (converter definitions) and presentation logic,
+making it easy to add new converters by simply adding new configuration objects.`,
+  tech: ['Astro', 'TypeScript', 'Tailwind CSS', 'Static Generation', 'React'],
+  github: 'https://github.com/Daniumy/Convertiu',
+  live: 'https://convertiu.vercel.app',
+  coverImage: '/projects/convertiu/Convertiu-Home.png',
+  images: [
+    '/projects/convertiu/Convertiu-Home.png',
+    '/projects/convertiu/Convertiu-Conversor.png',
+    '/projects/convertiu/Convertiu-Conversor-2.png',
+  ],
+};
+
+export const FeaturedProjectsES: Project[] = [transferbasketES, convertiyES];
+export const FeaturedProjectsEN: Project[] = [transferbasketEN, convertiyEN];
